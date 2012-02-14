@@ -79,6 +79,12 @@ CGPoint right			= CGPointMake(CGRectGetMaxX(withRect), CGRectGetMinY(withRect));
 CGContextRef context	= UIGraphicsGetCurrentContext();																		\
 CGContextDrawLinearGradient(context, gradient, left, right, 0); CGGradientRelease(gradient)
 
+#define LAYER_DROP_SHADOW(view, color, offset, opacity, radius) \
+view.layer.shadowColor = color.CGColor; \
+view.layer.shadowOffset = offset;       \
+view.layer.shadowOpacity = opacity;     \
+view.layer.shadowRadius = radius
+
 #ifdef DEBUG
 #   define DEBUG_LOG(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
