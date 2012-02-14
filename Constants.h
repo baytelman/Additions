@@ -10,6 +10,7 @@
 #define OR  ||
 
 #define RED             [UIColor redColor]
+#define WHITE           [UIColor whiteColor]
 #define BLACK           [UIColor blackColor]
 #define BLUE            [UIColor blueColor]
 #define GREEN           [UIColor greenColor]

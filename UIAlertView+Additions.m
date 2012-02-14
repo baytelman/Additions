@@ -6,7 +6,7 @@
 //
 
 #import <objc/runtime.h>
-#import "UIAlertView+WCAlertView.h"
+#import "UIAlertView+Additions.h"
 
 @implementation UIAlertView (Additions)
 static char BB_KEY;
