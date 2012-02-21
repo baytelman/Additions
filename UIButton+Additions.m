@@ -112,7 +112,7 @@ static char BG_PROPERTY_KEY;
     [button setImage:offImage forState:UIControlStateNormal];
     [button setImage:onImage forState:UIControlStateHighlighted];
     
-    button.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    button.imageEdgeInsets = UIEdgeInsetsMake(0, -16, 0, 0);
     
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return button;

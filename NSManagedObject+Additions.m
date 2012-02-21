@@ -41,7 +41,7 @@ static NSManagedObjectContext *context = nil;
 {
 //#warning RETURN SINGLETON INSTANCE OF managedObjectContext;
     if (context == nil) 
-        return [WCCoreData instance].managedObjectContext;
+        return nil; //[WCCoreData instance].managedObjectContext;
 
     return context;
 }

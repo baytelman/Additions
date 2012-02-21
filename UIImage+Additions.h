@@ -23,4 +23,5 @@
 - (UIImage *)resizeTo:(CGSize)targetSize;
 - (UIImage *)fillImageWithColor:(UIColor *)color;
 + (UIImage *)imageNamed:(NSString *)name withShadowColor:(UIColor *)color;
+- (UIImage *)withNewSize:(CGSize)newSize;
 @end

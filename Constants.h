@@ -129,3 +129,10 @@ view.layer.shadowRadius = radius
 
 #define SYNC_USER_DEFAULTS                  [[NSUserDefaults standardUserDefaults] synchronize]
 
+#ifndef DEGREES_TO_RADIANS
+#define DEGREES_TO_RADIANS(d) ((d) * 0.0174532925199432958)
+#endif
+
+#ifndef RADIANS_TO_DEGREES
+#define RADIANS_TO_DEGREES(r) ((r) * 57.29577951308232)
+#endif
