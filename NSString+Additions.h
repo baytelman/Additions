@@ -23,4 +23,5 @@
 - (BOOL)canBeInputByPhonePad:(char)c;
 - (NSString *)strip:(NSString *)phoneNumber;
 - (NSString *)formattedPhoneNumber;
+- (NSString *)substringAfterRange:(NSRange)range;
 @end

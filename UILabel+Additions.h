@@ -12,4 +12,5 @@
 - (void)alignTop;
 - (void)alignBottom;
 - (void)sizeToFitFixedWidth:(NSInteger)fixedWidth;
+- (void)adjustHeightForString:(NSString *)str;
 @end

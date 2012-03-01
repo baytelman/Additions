@@ -293,4 +293,9 @@
 	return [result autorelease];
 }
 
+- (NSString *)substringAfterRange:(NSRange)range
+{
+    return [self substringFromIndex:NSMaxRange (range)];
+}
+
 @end

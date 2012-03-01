@@ -5,6 +5,9 @@
 //  Copyright 2012. All rights reserved.
 //
 
+#ifndef CONSTANTS
+#define CONSTANTS
+
 /* Language Short hands */
 #define AND &&
 #define OR  ||
@@ -135,4 +138,6 @@ view.layer.shadowRadius = radius
 
 #ifndef RADIANS_TO_DEGREES
 #define RADIANS_TO_DEGREES(r) ((r) * 57.29577951308232)
+#endif
+
 #endif
