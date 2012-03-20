@@ -149,7 +149,8 @@
 
 
 
-- (NSString*) monthString{
+- (NSString*) monthString
+{
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];	
 	[dateFormatter setDateFormat:@"MMMM"];
 	return [dateFormatter stringFromDate:self];
