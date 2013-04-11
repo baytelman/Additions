@@ -43,10 +43,10 @@ typedef enum {
 + (NSDate *) month;
 
 - (NSDate *) monthDate;
-//- (NSDate *) lastOfMonthDate;
+- (NSDate *) yearDate;
+- (NSDate*) timelessDate;
 
-
-
+#pragma mark - Comparison
 - (BOOL) isSameDay:(NSDate*)anotherDate;
 - (int) monthsBetweenDate:(NSDate *)toDate;
 - (NSInteger) daysBetweenDate:(NSDate*)d;
@@ -59,6 +59,7 @@ typedef enum {
 - (NSString *) monthString;
 - (NSString *) yearString;
 
+- (int) weekday;
 
 - (DateInformation) dateInformation;
 - (DateInformation) dateInformationWithTimeZone:(NSTimeZone*)tz;
