@@ -42,7 +42,7 @@ static char FL_DELEGATE_KEY;
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if(self.flDelegate AND [self.flDelegate respondsToSelector:@selector(alertView:clickedButtonAtIndex:)])
+    if(self.flDelegate && [self.flDelegate respondsToSelector:@selector(alertView:clickedButtonAtIndex:)])
         [self.flDelegate alertView:alertView clickedButtonAtIndex:buttonIndex];
     
     UIAlertViewBlock block = [[self buttonsAndBlocks] objectForKey:[NSNumber numberWithInteger:buttonIndex]];
@@ -52,32 +52,32 @@ static char FL_DELEGATE_KEY;
 #pragma mark - Delegate Methods
 - (void)alertViewCancel:(UIAlertView *)alertView
 {
-    if(self.flDelegate AND [self.flDelegate respondsToSelector:@selector(alertViewCancel:)])
+    if(self.flDelegate && [self.flDelegate respondsToSelector:@selector(alertViewCancel:)])
         [self.flDelegate alertViewCancel:alertView];
     
 }
 
 - (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    if(self.flDelegate AND [self.flDelegate respondsToSelector:@selector(alertView:willDismissWithButtonIndex:)])
+    if(self.flDelegate && [self.flDelegate respondsToSelector:@selector(alertView:willDismissWithButtonIndex:)])
         [self.flDelegate alertView:alertView willDismissWithButtonIndex:buttonIndex];
 }
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    if(self.flDelegate AND [self.flDelegate respondsToSelector:@selector(alertView:didDismissWithButtonIndex:)])
+    if(self.flDelegate && [self.flDelegate respondsToSelector:@selector(alertView:didDismissWithButtonIndex:)])
         [self.flDelegate alertView:alertView didDismissWithButtonIndex:buttonIndex];
 }
 
 - (void)willPresentAlertView:(UIAlertView *)alertView
 {
-    if(self.flDelegate AND [self.flDelegate respondsToSelector:@selector(willPresentAlertView:)])
+    if(self.flDelegate && [self.flDelegate respondsToSelector:@selector(willPresentAlertView:)])
         [self.flDelegate willPresentAlertView:alertView];
 }
 
 - (void)didPresentAlertView:(UIAlertView *)alertView
 {
-    if(self.flDelegate AND [self.flDelegate respondsToSelector:@selector(didPresentAlertView:)])
+    if(self.flDelegate && [self.flDelegate respondsToSelector:@selector(didPresentAlertView:)])
         [self.flDelegate didPresentAlertView:alertView];
 }
 
