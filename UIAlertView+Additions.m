@@ -40,6 +40,14 @@ static char FL_DELEGATE_KEY;
     return alert;
 }
 
++ (void)showMessageWithTitle:(NSString *)title message:(NSString *)message
+{
+    UIAlertView * alert = [UIAlertView alertViewWithTitle:title message:message];
+    [alert addButtonWithTitle:@"OK"];
+    [alert show];
+}
+
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if(self.flDelegate && [self.flDelegate respondsToSelector:@selector(alertView:clickedButtonAtIndex:)])

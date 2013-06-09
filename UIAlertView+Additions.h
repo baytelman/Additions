@@ -14,6 +14,8 @@ typedef void (^UIAlertViewBlock)(void);
 @property (nonatomic, retain) id<UIAlertViewDelegate> flDelegate;
 
 + (UIAlertView *)alertViewWithTitle:(NSString *)title message:(NSString *)message;
++ (void)showMessageWithTitle:(NSString *)title message:(NSString *)message;
+
 - (void)cancelButtonWithTitle:(NSString *)title block:(UIAlertViewBlock)block;
 - (void)addButtonWithTitle:(NSString *)title block:(UIAlertViewBlock)block;
 
