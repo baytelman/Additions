@@ -129,6 +129,7 @@ view.layer.shadowRadius = radius
 #define SET_USER_DEFAULT(key, val)          [[NSUserDefaults standardUserDefaults] setValue:val     forKey:key]
 #define SET_USER_DEFAULT_OBJECT(key, obj)   [[NSUserDefaults standardUserDefaults] setObject:obj    forKey:key]
 #define SET_USER_DEFAULT_INT(key, intgr)    [[NSUserDefaults standardUserDefaults] setInteger:intgr forKey:key]
+#define CLEAR_USER_DEFAULT(key)             [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]
 
 #define SYNC_USER_DEFAULTS                  [[NSUserDefaults standardUserDefaults] synchronize]
 
