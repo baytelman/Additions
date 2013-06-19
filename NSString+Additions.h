@@ -9,14 +9,16 @@
 
 @interface NSString(Additions)
 
+- (NSString*)trimWhitespaces;
+
 - (BOOL) isValidEmail;
 - (NSString *)URLEncode;
 - (NSString *)escapeHTML;
 - (NSString *)unescapeHTML;
 - (NSString *)stringByRemovingHTML;
 - (NSString *)capitalizeFirstLetter;
-- (NSString *) md5;
-+ (NSString *) uuid;
+- (NSString *)md5;
++ (NSString *)uuid;
 
 // For phone numbers:
 + (NSDictionary *) sharedPhoneFormats;

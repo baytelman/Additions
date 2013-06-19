@@ -10,6 +10,11 @@
 
 @implementation NSString(Additions)
 
+- (NSString*)trimWhitespaces
+{
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+}
+
 - (BOOL)isValidEmail
 {
     NSString *emailRegex =  @"(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}"  
