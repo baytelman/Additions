@@ -10,8 +10,8 @@
 typedef void (^UIAlertViewBlock)(void);
 
 @interface UIAlertView (Additions)
-@property (nonatomic, retain) NSMutableDictionary *buttonsAndBlocks;
-@property (nonatomic, retain) id<UIAlertViewDelegate> flDelegate;
+@property(nonatomic, retain) NSMutableDictionary *buttonsAndBlocks;
+@property(nonatomic, retain) id<UIAlertViewDelegate> flDelegate;
 
 + (UIAlertView *)alertViewWithTitle:(NSString *)title message:(NSString *)message;
 + (void)showMessageWithTitle:(NSString *)title message:(NSString *)message;

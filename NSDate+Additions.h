@@ -37,7 +37,7 @@ typedef enum {
 
 +(int) unixTimestampFromDate:(NSDate *)aDate;
 +(int) unixTimestampNow;
-- (int) timestamp;
+- (int) datestamp;
 
 + (NSDate *)date:(NSDate *)aDate add:(NSUInteger)increment of:(NSDateTimeType)type;
 

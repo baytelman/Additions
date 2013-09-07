@@ -12,6 +12,8 @@
 #define AND &&
 #define OR  ||
 
+#define NOTHING {}
+
 #define RED             [UIColor redColor]
 #define WHITE           [UIColor whiteColor]
 #define BLACK           [UIColor blackColor]
